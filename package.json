@@ -1,0 +1,20 @@
+{
+  "name": "exercicio-vite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "vite": "^5.4.7"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
