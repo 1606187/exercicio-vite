@@ -1,8 +1,10 @@
 import "./style.css"
-import { pegarValorTextualDaTela, mostraValorEmElemento, adicionarEventoEmElemento } from "./moduloTela"
+import { pegarValorTextualDaTela, mostraValorEmElemento, adicionarEventoEmElemento, pegarValorNumericoDaTela } from "./moduloTela"
 import { concatenarDoisTextos } from "./moduloTextos"
+import { dividirDoisNumeros } from "./calculadora"
 
 adicionarEventoEmElemento("botaoConcatenar", "click", iniciarProcessoConcatenacao)
+adicionarEventoEmElemento("botaoDividir", "click", iniciarProcessoDivisao)
 
 function iniciarProcessoConcatenacao() {
     const nome = pegarValorTextualDaTela("nome")
@@ -11,5 +13,14 @@ function iniciarProcessoConcatenacao() {
     const nomeCompleto = concatenarDoisTextos(nome, sobrenome)
 
     mostraValorEmElemento("resultadoConcat", nomeCompleto)
+}
+
+function iniciarProcessoDivisao() {
+    const numeroUm = pegarValorNumericoDaTela("numeroUm")
+    const numeroDois = pegarValorNumericoDaTela("numeroDois")
+    
+    const resultado = dividirDoisNumeros(numeroUm, numeroDois)
+
+    mostraValorEmElemento("resultadoDivisao", resultado)
 }
 
