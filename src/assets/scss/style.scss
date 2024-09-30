@@ -1,0 +1,40 @@
+@import '_cores.scss';
+@import '_reset.scss';
+
+body {
+  height: 100vh;
+  background-color: $verde;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  background-color: red;
+  color: white;
+}
+
+.caixa-exercicio {
+  border: solid red 2px;
+  height: 300px;
+
+  &__formulario {
+    border: solid blue 2px;
+  }
+}
+
+.botao {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: red;
+  color: white;
+
+  &--primario {
+    border: solid black 10px;
+  }
+
+  &--secundario {
+    border: solid yellow 10px;
+  }
+}

@@ -1,7 +1,7 @@
-import "./style.css"
-import { pegarValorTextualDaTela, mostraValorEmElemento, adicionarEventoEmElemento, pegarValorNumericoDaTela } from "./moduloTela"
-import { concatenarDoisTextos } from "./moduloTextos"
-import { dividirDoisNumeros } from "./calculadora"
+import "./src/assets/scss/style.scss"
+import { pegarValorTextualDaTela, mostraValorEmElemento, adicionarEventoEmElemento, pegarValorNumericoDaTela } from "./src/js/moduloTela"
+import { concatenarDoisTextos } from "./src/js/moduloTextos"
+import { dividirDoisNumeros } from "./src/js/calculadora"
 
 adicionarEventoEmElemento("botaoConcatenar", "click", iniciarProcessoConcatenacao)
 adicionarEventoEmElemento("botaoDividir", "click", iniciarProcessoDivisao)
