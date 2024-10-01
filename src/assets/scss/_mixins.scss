@@ -1,0 +1,35 @@
+@import "./cores.scss";
+
+@mixin flex-centralizado($gapSize: 0, $flexDirection: row) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: center;
+  align-items: center;
+
+  gap: $gapSize;
+}
+
+@mixin card() {
+  padding: 5px;
+  background-color: $cinza-claro;
+  height: 150px;
+  display: flex;
+}
+
+@mixin botao() {
+  border-radius: 3px;
+  padding: 5px 20px;
+  background-color: $cinza-escuro;
+  border: none;
+  color: white;
+  width: 100%;
+
+  &--primario {
+    // border: solid black 10px;
+  }
+}
+
+@mixin input(){
+  box-sizing: border-box;
+  width: 100%;
+}

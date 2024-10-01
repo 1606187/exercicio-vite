@@ -1,0 +1,11 @@
+@import '_cores.scss';
+@import '_mixins.scss';
+
+body {
+  height: 100vh;
+  background-color: $verde;
+
+  @include flex-centralizado(10px);
+
+  padding: 10px;
+}
